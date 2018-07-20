@@ -312,7 +312,7 @@ $(document).ready(function() {
   // Weather
   // var cityid = 101020100;
   var cityid = Store.getCookie('cityid');
-  var weather=$.ajax({url:"https://www.94994.com/myapp/weather/data/index.php%3fcityID=" + cityid, async:false});
+  var weather=$.ajax({url:"https://www.94994.com/myapp/weather/data/index.php?fcityID=" + cityid, async:false});
 
   var weatherJson = JSON.parse(weather.responseText);
 
