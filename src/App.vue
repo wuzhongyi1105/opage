@@ -286,7 +286,7 @@ $(document).ready(function() {
     Store.setCookie("cityid", $(".area").val(), 365);
   });
   // City select
-  $.cxSelect.defaults.url = "https://qiniu.viosey.com/cityid.min.json";
+  $.cxSelect.defaults.url = "https://raw.githubusercontent.com/iiiiiii1/opage/master/src/cityid.min.json";
   $("#cities").cxSelect({
     selects : ["province", "city", "area"],
     nodata : "none",
@@ -312,7 +312,7 @@ $(document).ready(function() {
   // Weather
   // var cityid = 101020100;
   var cityid = Store.getCookie('cityid');
-  var weather=$.ajax({url:"https://weather.viosey.com/myapp/weather/data/index.php%3fcityID=" + cityid, async:false});
+  var weather=$.ajax({url:"https://www.94994.com/myapp/weather/data/index.php%3fcityID=" + cityid, async:false});
 
   var weatherJson = JSON.parse(weather.responseText);
 
