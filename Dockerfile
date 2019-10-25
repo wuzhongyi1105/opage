@@ -1,6 +1,8 @@
 FROM node:alpine
 
 RUN apk upgrade --update \
+ && apk add -t build-dependencies \
+    build-base \
  && apk add \
     openssl \
     ca-certificates \
