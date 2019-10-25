@@ -13,6 +13,8 @@ RUN apk upgrade --update \
 
 WORKDIR /opt/opage
 
+RUN npm install
+
 VOLUME /opt/opage/src
 
 EXPOSE 8080
